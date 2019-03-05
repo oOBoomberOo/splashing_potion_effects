@@ -1,0 +1,3 @@
+execute as @s run data modify entity @s Item.tag.CustomPotionEffects[] set from entity @e[type=area_effect_cloud, tag=!boomber.splashing.ignore, distance=..10, limit=1, sort=nearest] Effects[0]
+execute as @e[type=area_effect_cloud, tag=!boomber.splashing.ignore, distance=..10, limit=1, sort=nearest] run data remove entity @s Effects[0]
+execute as @e[type=area_effect_cloud, tag=!boomber.splashing.ignore, distance=..10, limit=1, sort=nearest] unless data entity @s Effects run kill @s
