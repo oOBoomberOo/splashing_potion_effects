@@ -1,4 +1,4 @@
-kill @s
-loot spawn ~ ~ ~ loot boomber:splashing/empty_potion
+summon item ~ ~ ~ {Item: {id: "minecraft:potion", Count: 1b}, Tags: ["boomber.splashing.temp"]}
+	execute as @e[type=item, tag=boomber.splashing.temp] run function boomber:splashing/potion/effect
 
-execute as @e[type=item, limit=1, distance=..0.1] run function boomber:splashing/potion/effect
+kill @s

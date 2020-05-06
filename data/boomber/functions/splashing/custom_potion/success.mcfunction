@@ -1,0 +1,1 @@
+data modify entity @s Item.tag set from storage boomber:splashing result

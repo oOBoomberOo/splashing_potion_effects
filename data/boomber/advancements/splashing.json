@@ -1,6 +1,6 @@
 {
 	"display": {
-		"title": "Splashing Potion Effects v0.1",
+		"title": "Splashing Potion Effects",
 		"description": "Dying with style!",
 		"icon": {
 			"item": "minecraft:splash_potion"
@@ -8,7 +8,7 @@
 		"announce_to_chat": false,
 		"show_toast": false
 	},
-	"parent": "boomber:boomber",
+	"parent": "global:boomber",
 	"criteria": {
 		"trigger": {
 			"trigger": "minecraft:tick"

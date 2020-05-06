@@ -1,0 +1,1 @@
+execute if entity @e[type=area_effect_cloud, tag=!global.ignore, distance=..10] run function boomber:splashing/bottle/bottled

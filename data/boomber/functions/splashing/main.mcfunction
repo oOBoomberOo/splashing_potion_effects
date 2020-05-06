@@ -1,3 +1,2 @@
-execute as @a[scores={bb.if.death=1..}] at @s if data entity @s ActiveEffects run function boomber:splashing/death
-execute as @a[scores={bb.if.death=1..}] at @s run scoreboard players set @s bb.if.death 0
-execute as @e[type=item, tag=!boomber.splashing.ignore, nbt={Item:{id:"minecraft:glass_bottle", Count:1b}, OnGround:1b}] at @s if entity @e[type=area_effect_cloud, tag=!boomber.splashing.ignore, distance=..10, limit=1] run function boomber:splashing/potion
+execute as @a[tag=!global.ignore, tag=!global.ignore.gui] at @s run function boomber:splashing/player/main
+execute as @e[type=item, tag=!global.ignore, tag=!global.ignore.kill, tag=!global.ignore.gui, nbt={Item: {id: "minecraft:glass_bottle", Count: 1b}, OnGround: 1b}] at @s run function boomber:splashing/bottle/main
